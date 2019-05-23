@@ -58,3 +58,13 @@ optional arguments:
 forward output variables:
    data                 OECD stats in JSON format
 
+ 
+Example(s)
+----------
+
+Following command collect OECD stats of dataset='QNA',
+filter='USA+KOR+CHN.GDP+B1_GE.CUR+VOBARSA.Q',
+agency='all', and save the collected data to 'oecd.json'.
+
+>>> pyloco oecejson -o oecd.json
+
