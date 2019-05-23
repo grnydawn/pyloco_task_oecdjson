@@ -16,14 +16,14 @@ and optionally save the collected in a file for later use.
 To access OECD data, the task internally use the following URL syntax:
 'http://stats.oecd.org/SDMX-JSON/data/<dataset>/<filter>/<agency>[?<parameters>]'
 You can specify your own data query using command-line options. Please run 
-'pyloco oecejson -h' after installation of this task.
+'pyloco oecdjson -h' after installation of this task.
 
 Example(s)
 ----------
 
 Following command collect OECD stats of dataset='%s', filter='%s',
 agency='%s', and save the collected data to 'oecd.json'.
->>> pyloco oecejson -o oecd.json
+>>> pyloco oecdjson -o oecd.json
 """ % (default_dataset, default_filter, default_agency)
 
     _name_ = "oecdjson"
