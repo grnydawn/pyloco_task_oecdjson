@@ -32,6 +32,17 @@ command to install pyloco, and try again above task installation. ::
     - Add '-U' option to 'pip' command to upgrade pyloco.
     - We recommend to use pyloco version 0.0.109 or higher.
 
+Description
+------------
+
+'oecdjson' task downloads OECD statistics from OECD web-site in JSON format
+and optionally save the collected in a file for later use.
+To access OECD data, the task internally use the following URL syntax:
+'http://stats.oecd.org/SDMX-JSON/data/<dataset>/<filter>/<agency>[?<parameters>]'
+You can specify your own data query using command-line options. Please run 
+'pyloco oecdjson -h' after installation of this task.
+
+
 Command-line syntax
 -------------------
 
